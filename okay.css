@@ -1,0 +1,108 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  background-color: #e6f9ea; /* Light green background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+}
+
+th {
+  background: linear-gradient(to right, #66bb6a, #43a047);
+  color: #fff;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid #388e3c;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #c8e6c9;
+  font-size: 15px;
+  color: #2e7d32;
+}
+
+tr:hover {
+  background-color: #d0f0d7;
+  transition: background-color 0.3s ease;
+}
+
+input[type="number"], textarea {
+  width: 70px;
+  border: 1px solid #a5d6a7;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.portfolio-item, .rating-section {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 15px 0;
+  border-left: 4px solid #0077ff;
+  border-radius: 5px;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.live-bar {
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 15px;
+  animation: pulse 2s infinite;
+}
+
+.live-bar span {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#liveChartContainer {
+  margin-top: 20px;
+  background: #eef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Optional: animated pulse for live bar */
+@keyframes pulse {
+  0% { background-color: #222; }
+  50% { background-color: #333; }
+  100% { background-color: #222; }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulated Trading Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="okay.css">
+</head>
+<body>
+  <div class="container">
+    <h1>smart invest</h1>
+    <h1>demo trade</h1>
+    <p><strong>Available Balance:</strong> ₹<span id="balance">100000</span></p>
+
+    <form id="stockForm">
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Live Price (₹)</th>
+            <th>Buy Qty</th>
+            <th>Sell Qty</th>
+            <th>Rate (1–5)</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody id="stockTableBody"></tbody>
+      </table>
+      <button type="submit">💸 Buy/Sell Selected Stocks</button>
+    </form>
+
+    <h2>📦 Your Portfolio</h2>
+    <div id="portfolio" class="flex"></div>
+
+    <h2>📈 Live Price Ticker</h2>
+    <div class="live-bar" id="liveTicker">
+      <!-- Live prices added here -->
+    </div>
+
+    <div id="liveChartContainer" style="display:none;">
+      <h2>📌 Live Tracking: <span id="selectedCompany"></span></h2>
+      <canvas id="liveChartCanvas" width="600" height="300"></canvas>
+    </div>
+  </div>
+  <script src="attempt1.js"></script>
+
+
+  
+</body>
+</html>
